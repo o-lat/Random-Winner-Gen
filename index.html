@@ -20,12 +20,20 @@
 						<span class="tag">Enter Name: </span><input type="text" id="name" placeholder="Enter name here..."><br>
 					</div>
                     <br>
-					<button class="button" id="submit"><span>Submit</span></button><br>
+					<button class="button" id="add_name" onclick="addName()"><span>Add</span></button>
 					<div class="output_cont" id="output">
-                         
-						<p>Entered Names: </p><br>
-                        <p class="output" id="output_names"></p>
-                        
+						
+						<div class="seperator">
+							<span>Entered Names: </span>
+							<center>
+								<div class="list_cont">
+									<span id="names"></span>
+								</div>
+							</center>
+						</div>
+						<button class="button_big" id="get_winner" onclick="getWinner()">Generate winner</button></br>
+						<span class="winner_output" id="winner"></span></br>
+						<a onclick="location.reload()">Reload</a>
 					</div>
 				</div>
 			</div>
